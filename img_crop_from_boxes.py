@@ -12,6 +12,7 @@ parser.add_argument('--images', type=str, dest= 'input_images', default = './boa
 parser.add_argument('--crops', type=str, dest= 'crop_images', default = './crops/', help = "path to directory for crop outputs")
 args = parser.parse_args()
 
+print(args.input_boxes)
 xmls = []
 for f_path in os.listdir(args.input_boxes):
     if f_path.endswith('.xml'):
